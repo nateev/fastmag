@@ -1,0 +1,21 @@
+{
+    "name": "nateev/fastmag",
+    "description": "An easy-to-use PHP Class for accessing Fastmag EDI",
+    "type": "library",
+    "require": {
+        "curl/curl": "^1.6"
+    },
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Loic Bertholet",
+            "email": "loic.dev@nateev.fr"
+        }
+    ],
+    "version": "dev-master",
+    "autoload": {
+        "psr-4": {
+            "Nateev\\Fastmag\\": "src"
+        }
+    }
+}
