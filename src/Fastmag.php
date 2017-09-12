@@ -16,7 +16,7 @@ use Curl;
  * @since 20.07.2017
  * @copyright Nateev -  2017
  * @version 1.0
- * @license BSD http://www.opensource.org/licenses/bsd-license.php
+ * @license GNU https://www.gnu.org/licenses/licenses.fr.html
  */
 
 class Fastmag {
