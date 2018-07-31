@@ -272,20 +272,16 @@ class Fastmag {
                 $url = $this->getEdiQuery();
                 break;
         }
-        try {
-            $result = $curl->post($url, $params);
-            if ($result->http_status_code != 200) {
-                log_message($result->http_status_code, $result->response);
-            }
-            return $result;
-        }  catch (Exception $e) {
-            log_message($e, $e->getMessage());
+        $result = $curl->post($url, $params);
+        if ($result->error) {
+            error_log($result->error_message);
         }
+        return $result;
     }
 
     /**
      * @param array $data
-     * 
+     *
      * */
     public function curlCreateRequestForPicture($data) {
         $curl = new Curl\Curl();
